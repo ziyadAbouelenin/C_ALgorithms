@@ -18,4 +18,4 @@ Sample Output
 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
 
 ---------------------------------------
-It was a challenge on Hackerrank see read code comments for details 
+It was a challenge on Hackerrank. 
