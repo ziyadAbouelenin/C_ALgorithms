@@ -8,36 +8,37 @@ int main()
 
     int n;
     scanf("%d", &n);
-  	// Complete the code to print the pattern.
+
     int k=(2*n)-1;
     int a[k][k];
+   
     for (int i=0; i<n; i++) {
         //will run at o(n)
     for (int j=i; j<k-i; j++) {
         // will run at o(2n-1-i)
     a[i][j] = n-i;
-    //for input 2, this will be printing top horizontal line
+    //for input 2, this will be add top horizontal line
     /*
     2 2 2
     # # #
     # # #
     */
     a[j][i]=n-i;
-    //for input 2, this will be printing left most verticle line
+    //for input 2, this will be add left most verticle line
     /*
     2 # #
     2 # #
     2 # #
     */
     a[k-i-1][j]=n-i;
-    //for input 2, this will be printing bottom horizontal line
+    //for input 2, this will be add bottom horizontal line
     /*
     # # #
     # # #
     2 2 2
     */
     a[j][k-i-1]=n-i;
-    //for input 2, this will be printing right most verticle line
+    //for input 2, this will be add right most verticle line
     /*
     # # 2
     # # 2
